@@ -7,6 +7,8 @@ struct Point {
 #[derive(Debug)]
 enum Message {
     // TODO: Define the different variants used below.
+    Move: Point,
+    Echo:String
 }
 
 impl Message {
