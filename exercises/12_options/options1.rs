@@ -4,13 +4,13 @@
 // `hour_of_day` is higher than 23.
 fn maybe_ice_cream(hour_of_day: u16) -> Option<u16> {
     // TODO: Complete the function body.
-    let mut remainder: u16 = 5;
     if hour_of_day > 23 {
-        return None;
-    } else if hour_of_day > 22 {
-        remainder = 0;
+        None
+    } else if hour_of_day >= 22 {
+        Some(0)
+    } else {
+        Some(5)
     }
-    return Some(remainder);
 }
 
 fn main() {
